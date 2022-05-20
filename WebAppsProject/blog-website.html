@@ -2,34 +2,45 @@
 <html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
-    <!--<link rel="stylesheet" href="css/styles.css">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Joan Smith's Blog </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
-            <a href="home.html">Home</a>
-            <a href="popular.html">Most Popular</a>
-            <a href="recent.html">Most Recent</a>
-        </nav>
-        <span>
-            <img src="banner.jpg" alt="abstract technical art" width="1250" height="300">
-        </span>
-        <!--where the container holding the image will go-->
-        <img src="joan.jpg" alt="black woman with braids" width="200" height="200">
-        <h1><strong></strong>Joan Smith's Blog</strong></h1>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li class="menuitem"><a href="https://www.google.com/">Login</a></li>
+                    <li class="menuitem"><a href="#">Register</a></li>
+                    <li class="menuitem right"><a href="#">Most Recent</a></li>
+                    <li class="menuitem right"><a href="#">Most Popular</a></li>
+                    <li class="menuitem right"><a href="#">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    <div id="header-banner"> 
+        <div class="myimage">
+            <img src="./images/joan.jpg" alt="black woman with braids" width="200" height="200" >
+        </div>
+    </div>
+  
+        
+        <h1 class="site-title"><strong></strong>Joan Smith's Blog</strong></h1>
     </header>
-    <div>
+    <div class="content-wrap">
         <!--blog preview 1-->
         <article>
             <h2>Blog Title</h2>
             <h3>Blog Sub-title</h3>
-            <img src="robots1.jpg" alt="white elevated robot with wires sticking out" width="150" height="150">
-            <img src="robots2.jpg" alt="little girl with a dressed up robot" width="150" height="150">
+            <img src="./images/robots1.jpg" alt="white elevated robot with wires sticking out" width="150" height="150">
+            <img src="./images/robots2.jpg" alt="little girl with a dressed up robot" width="150" height="150">
             <p>
                 Lorem ipsum dolor sit amet, consectetur<br>
                 adipiscing elit. Sed ultrices blandit erat sed<br>
@@ -43,12 +54,13 @@
             </p>
         </article>
 
-         <!--blog preview 2-->
-         <article>
+        <!--blog preview 2-->
+        <article>
             <h2>Blog Title</h2>
             <h3>Blog Sub-title</h3>
-            <img src="wearables1.jpg" alt="women in red dress using microcontrollers to cover eyes " width="150" height="150">
-            <img src="wearables2.jpg" alt="headset on display on table" width="150" height="150">
+            <img src="./images/wearables1.jpg" alt="women in red dress using microcontrollers to cover eyes "
+                width="150" height="150">
+            <img src="./images/wearables2.jpg" alt="headset on display on table" width="150" height="150">
             <p>
                 Lorem ipsum dolor sit amet, consectetur<br>
                 adipiscing elit. Sed ultrices blandit erat sed<br>
@@ -63,29 +75,40 @@
         </article>
 
     </div>
-    <div><!--highlights (most recent,most popular)--> 
-    <h2><strong>Most Recent</strong></h2>
-    <a href=#>
-        <img src="recent1.jpg" alt="laptop with code on table beside a foot" width="200" height="100">
-        Blog Title
-    </a>
-    <a href=#>
-        <img src="recent2.jpg" alt="woman in all black with futuristic shades" width="200" height="100">
-        Blog Title
-    </a>
-    <a href=#>
-        <img src="recent3.jpg" alt="people working in the center of big office" width="200" height="100">
-        Blog Title
-    </a>
-    <h2><strong>Most Popular</strong></h2>
-    <a href=#>
-        <img src="popular1.jpg" alt="black woman with braids working on laptop" width="200" height="100">
-        Blog Title
-    </a>
-    <a href=#>
-        <img src="popular3.jpg" alt="topview of multiple laptops on a busy table" width="200" height="100">
-        Blog Title
-    </a>
+    <div class="content-wrap right">
+        <!--highlights (most recent,most popular)-->
+        <h2 style="text-align:center;"><strong>Most Recent</strong></h2>
+        <div class="container">
+        <a href=#>
+            <img src="./images/recent1.jpg" alt="laptop with code on table beside a foot" width="200" height="100">
+            <h3 class="centered">Blog Title</h3>
+        </a>
+        </div>
+        <div class="container">
+        <a href=#>
+            <img src="./images/recent2.jpg" alt="woman in all black with futuristic shades" width="200" height="100">
+            <h3 class="centered">Blog Title</h3>
+        </a>
+        </div>
+        <div class="container">
+        <a href=#>
+            <img src="./images/recent3.jpg" alt="people working in the center of big office" width="200" height="100">
+            <h3 class="centered">Blog Title</h3>
+        </a>
+        </div>
+        <h2 style="text-align:center;"><strong>Most Popular</strong></h2>
+        <div class="container">
+        <a href=#>
+            <img src="./images/popular1.jpg" alt="black woman with braids working on laptop" width="200" height="100">
+           <h3 class="centered popular">Blog Title</h3>
+        </a>
+        </div>
+        <div class="container">
+        <a href=#>
+            <img src="./images/popular3.jpg" alt="topview of multiple laptops on a busy table" width="200" height="100">
+            <h3 class="centered popular">Blog Title</h3>
+        </a>
+        </div>
     </div>
 
 

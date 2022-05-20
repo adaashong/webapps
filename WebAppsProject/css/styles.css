@@ -1,0 +1,139 @@
+
+/*Global styles
+--------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    background-color:#96aac3;
+    margin: 0;
+    padding: 0;
+    /*convention*/
+    font-family: Helvetica, Arial, san-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    /*1.5 the size of my font size*/
+}
+
+
+.nav-container{
+    background: #222222;
+    display: block;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .menuitem a:hover{
+    background: #ff0000;
+    transition: background 0.5s;
+  }
+ .menuitem.right {
+     float: right;
+ }
+
+ /**banner**/
+ #header-banner {
+    background-color: #333;
+    background-image: url('../images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.myimage {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+     top: 180px;
+    left: 500px;  
+}
+
+/*Content*/
+.site-title{
+    margin-top: 30px;
+    margin-right: 50px;
+    text-align: center;
+}
+.content-wrap{
+    float:left;
+    background:#5582ba;
+    margin-left: 50px;
+}
+.content-wrap.right {
+width:50%;
+float: left;
+margin-left: 200px;
+background:#2c507b;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: antiquewhite;
+  }
+  .centered.popular {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 38, 85);
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .content-wrap.right {
+        width:62%;
+        float: left;
+        margin-top: 20%;
+        margin-left:50px;
+        background:#2c507b;
+        }
+    .myimage {
+            display:none;
+            float: left;
+             top: 180px;
+            left: 500px;  
+    }
+}
+
